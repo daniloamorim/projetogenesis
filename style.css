@@ -47,6 +47,16 @@ body {
     border-top-left-radius: 100%;
 }
 
+@keyframes piscar {
+    from{
+        opacity: 0.4;
+        transition: 300ms;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .selected {
-    opacity: 0.8;
+    animation: piscar 1s alternate ;
 }
